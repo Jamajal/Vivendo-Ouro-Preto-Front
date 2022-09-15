@@ -1,4 +1,5 @@
 import Header from '../../components/Header'
+import Welcome from '../../components/Welcome'
 
 import { StyledHome } from './StyledHome'
 
@@ -6,9 +7,8 @@ import { StyledHome } from './StyledHome'
 export default function Home(){
     return(
         <StyledHome>
-            
-                <Header />
-
+            <Header />
+            <Welcome />
             
         </StyledHome>
     )

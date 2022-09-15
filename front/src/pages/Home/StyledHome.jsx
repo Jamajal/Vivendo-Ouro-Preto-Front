@@ -6,4 +6,8 @@ export const StyledHome = styled.div`
         padding-left: 120px;
         padding-right: 120px;
     }
+
+    .gap{
+        margin-top: 30px;
+    }
 `
