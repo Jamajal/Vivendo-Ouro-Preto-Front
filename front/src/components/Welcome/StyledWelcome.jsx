@@ -1,15 +1,24 @@
 import styled from 'styled-components'
 
 export const StyledWelcome = styled.section`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+    background-image: url("../../images/welcome2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 
-    h1{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+
+    > h1{
+        margin-top: 13%;
+        margin-right: 5%;
+        width: 60%;
+        
         font-family: 'Montserrat';
-        font-weight: 400;
+        font-weight: 500;
         font-size: 50px;
+        color: #62392B;
         line-height: 49px;  
         text-align: center;
     }

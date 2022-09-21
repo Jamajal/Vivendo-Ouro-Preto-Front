@@ -10,7 +10,7 @@ export default function Home(){
     return(
         <StyledHome>
             <Header />
-            <Welcome />
+            <Welcome /> 
             <EventList />
             <Forms />
             <Footer />

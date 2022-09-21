@@ -5,14 +5,23 @@ export const StyledHeader = styled.header`
     align-items: center;
     justify-content: space-between;
 
+    top: 0;
+    position: fixed;
+    width: 100%;
     padding: 10px 0;
 
-    background: #F8F7F5;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: rgba(248, 247, 245, 0.23);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 
    > img{
-        width: 192px;
-        height: 70px;
+        padding: 5px 10px;
+        width: 180px;
+        background-color: rgba(248, 247, 245, 0.23);
+        backdrop-filter: blur(50px);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 0 3px white;
    }
 
    > nav{
@@ -21,7 +30,8 @@ export const StyledHeader = styled.header`
    }
 
    a{
-        font-size: 17px;
+        font-size: 18px;
+        font-weight: 700;
         text-decoration: none;
         color: #925946;
    }

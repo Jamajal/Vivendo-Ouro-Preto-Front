@@ -4,9 +4,8 @@ import { StyledWelcome } from "./StyledWelcome";
 
 export default function Welcome(){
     return(
-        <StyledWelcome className="layer gap">
-            <img src="../../images/op.png" alt="Imagem de Ouro Preto" />
-            <h1>Gostaria de ficar por dentro de tudo que é interessante em Ouro Preto?</h1> 
+        <StyledWelcome id="welcome">
+            <h1>Explore tudo que Ouro Preto e região tem a oferecer</h1>
         </StyledWelcome>
     )
 }

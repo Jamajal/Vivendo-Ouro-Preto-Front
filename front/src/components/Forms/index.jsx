@@ -3,7 +3,7 @@ import { StyledForms } from "./StyledForms";
 export default function Forms(){
 
     return(
-        <StyledForms className="layer gap">
+        <StyledForms className="layer gap" id="home-form">
             <h2>Nos dê um feedback!</h2>
             <p>Gostou do que viu até então? Quer tirar alguma dúvida ou nos enviar um feedback com críticas e/ou sugestões? Preencha o formulário abaixo e fale com a gente!</p>
             <form action="./" method="post">

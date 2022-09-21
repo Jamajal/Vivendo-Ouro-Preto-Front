@@ -4,7 +4,7 @@ export default function Header(){
 
     return(
         <StyledHeader className="layer">
-            <img src="../../images/logo.png" alt="Logo" />
+            <img src="../../images/logo2.png" alt="Logo" />
             <nav>
                 <a href="#">Quem somos?</a>
                 <a href="#">Eventos</a>
