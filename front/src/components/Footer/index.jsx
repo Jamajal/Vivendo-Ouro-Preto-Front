@@ -6,20 +6,20 @@ export default function Footer(){
             <img src="../../images/footer.png" alt="Logo" />
             <div className="creators">
                 <div>
-                    <p>Leandro Libério</p>
-                    <p>(37)998064102</p>
-                </div>
-                <div>
                     <p>Arthur Silva</p>
-                    <p>(31)99233-9913</p>
-                </div>
-                <div>
-                    <p>Rafael Diniz</p>
-                    <p>(31)99917-7508</p>
+                    <p>arthusil18@hotmail.com</p>
                 </div>
                 <div>
                     <p>Felipe</p>
-                    <p>(31)8635-8142</p>
+                    <p>sasdelli.pi@gmail.com</p>
+                </div>
+                <div>
+                    <p>Leandro Libério</p>
+                    <p>leandroliberiomachado@hotmail.com</p>
+                </div>
+                <div>
+                    <p>Rafael Diniz</p>
+                    <p>rafaelddniz@gmail.com</p>
                 </div>
             </div>
         </StyledFooter>

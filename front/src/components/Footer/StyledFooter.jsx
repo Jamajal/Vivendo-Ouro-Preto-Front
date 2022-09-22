@@ -4,7 +4,7 @@ export const StyledFooter = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 70px;
 
     padding: 30px 0;
 
@@ -24,5 +24,6 @@ export const StyledFooter = styled.footer`
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 5px;
     }
 `
