@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 
+import background from '../../assets/images/welcome2.svg'
+
 export const StyledWelcome = styled.section`
-    background-image: url("../../images/welcome2.svg");
+    background-image: url(${background});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
