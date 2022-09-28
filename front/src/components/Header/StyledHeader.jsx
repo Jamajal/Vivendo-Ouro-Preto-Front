@@ -54,14 +54,9 @@ export const StyledHeader = styled.header`
 
    .not-logged,
    .logged{
-     width: 240px;
      display: flex;
      align-items: center;
      gap: 5px;
-   }
-
-   .logged > div{
-
    }
 
    .logged > div > label{

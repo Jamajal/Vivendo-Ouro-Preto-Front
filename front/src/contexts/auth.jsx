@@ -22,9 +22,9 @@ export const AuthProvider = ({ children }) => {
     const signin = (email, password) => {
         const usersStorage = JSON.parse(localStorage.getItem("users_db"));
 
-        const hasUser = usersStorage?.filter(user => {
-            user.email === email
-        });
+        const hasUser = usersStorage?.filter(user => user.email === email);
+
+        console.log("Hit");
 
         if(hasUser?.length){
             if(hasUser[0].email === email && hasUser[0].password === password){

@@ -13,7 +13,6 @@ export default function Header(){
                 <div className="logged">
                     <div className="visor on" />
                     <div className="profile">
-
                         <label onClick={() => signout()}>{user.email}</label>
                     </div>
                     
