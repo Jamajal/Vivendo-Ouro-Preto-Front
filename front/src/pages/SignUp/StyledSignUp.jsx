@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-export const StyledLogin = styled.section`
+export const StyledSignUp = styled.section`
     height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    > .login-box{
+    > .signup-box{
         width: 50%;
         padding: 15px;
 
@@ -18,11 +18,7 @@ export const StyledLogin = styled.section`
         border-radius: 20px;
     }
 
-    > .login-box > .left-side{
-        width: 100%;;
-    }
-
-    > .login-box > .right-side{
+    > .signup-box > .left-side{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -30,34 +26,43 @@ export const StyledLogin = styled.section`
         justify-content: center;
     }
 
-    > .login-box > .right-side > h2{
+    > .signup-box > .right-side{
+        width: 100%;
+    }
+
+    > .signup-box > .left-side > h2{
         font-family: 'Montaga', serif;
         font-weight: 400;
         font-size: 30px;
         line-height: 37px;
     }
 
-    > .login-box > .right-side > h3{
-        margin-bottom: 10px;
+    > .signup-box > .left-side > h3{
+        max-width: 85%;
+        margin-bottom: 20px;
 
+        text-align: center;
         font-family: 'Montaga', serif;
         font-weight: 400;
         font-size: 18px;
         line-height: 20px;
     }
 
-    > .login-box > .right-side > form{
+
+    > .signup-box > .left-side > form,
+    > .signup-box > .left-side > form > div{
         width: 100%;
 
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 10px;
     }
 
-    > .login-box > .right-side > form > input[type="text"],
-    > .login-box > .right-side > form > input[type="password"]{
+    > .signup-box > .left-side > form > input[type="text"],
+    > .signup-box > .left-side > form > input[type="password"],
+    > .signup-box > .left-side > form > div > input[type="text"]{
         width: 80%;
-        margin: 5px 0;
         padding: 5px 10px;
 
         background-color: #e7e7e7;
@@ -66,8 +71,7 @@ export const StyledLogin = styled.section`
         border-radius: 10px;
     }
 
-    > .login-box > .right-side > form > input[type="submit"]{
-        margin: 10px 0;
+    > .signup-box > .left-side > form > input[type="submit"]{
         padding: 5px 20px;
 
         font-size: 16px;
@@ -80,22 +84,16 @@ export const StyledLogin = styled.section`
         cursor: pointer;
     }
 
+    .error{
+        color: red;
+    }
+
     .layer{
         padding-left: 120px;
         padding-right: 120px;
     }
 
-    a{
-        text-weight: 700;
-        color: #81807f;
-        text-decoration: none;
-    }
-
-    a:hover{
-        text-shadow: 0 0 5px #919191;
-    }
-
-    .error{
-        color: red;
+    .gap{
+        margin-top: 30px;
     }
 `

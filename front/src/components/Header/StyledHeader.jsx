@@ -10,9 +10,9 @@ export const StyledHeader = styled.header`
     top: 0;
     position: fixed;
     width: 100%;
-    padding: 8px 0;
+    padding: 8px 30px;
 
-    background: rgba(248, 247, 245, 0.5);
+    background: rgba(248, 247, 245, 0.6);
     backdrop-filter: blur(5px);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 
@@ -22,8 +22,8 @@ export const StyledHeader = styled.header`
    }
 
    > nav{
-        display: flex;
-        gap: 19px;
+       display: flex;
+       gap: 10px;
    }
 
    a{
@@ -31,35 +31,76 @@ export const StyledHeader = styled.header`
         font-weight: 700;
         text-decoration: none;
         color: #925946;
+        transition: 0.5;
    }
 
-   a:hover{
-        color: #C3775E;
+   nav > a,
+   div > a{
+     padding: 5px 10px;
+     transition: 0.8s;
+   }
+
+   nav > a:hover,
+   div > a:hover{
+     color: white;
+     background-color: #925946;
+     border: solid 1px #925946;
+     border-radius: 10px;
    }
 
    > nav > a:hover{
      transform: translateY(-2px);
    }
 
-   .not-logged{
+   .not-logged,
+   .logged{
+     width: 240px;
      display: flex;
      align-items: center;
-     gap: 10px;
+     gap: 5px;
    }
 
-   .not-logged > .visor{
-     width: 10px;
-     height: 10px;
+   .logged > div{
+
+   }
+
+   .logged > div > label{
+     font-family: 'Merriweather';
+     font-size: 18px;
+     font-weight: 700;
+     color: #925946;
+     cursor: pointer;
+   }
+
+   .logged > div > label:hover{
+     text-shadow: 0 0 10px #925946;
+   }
+
+   .not-logged > a{
+      width: 100px;
+      
+      text-align: center;
+      font-size: 14px;
+      font-weight: 700;
+   }
+
+   .visor{
+     width: 15px;
+     height: 15px;
 
      margin-right: 5px;
 
      border-radius: 50%;
-     background-color: #B1AEAE;
      background: linear-gradient(to right, #DFDFDF, #989797);
    }
 
-   .not-logged > a{
-     font-size: 14px;
-     font-weight: 500;
+   .on{
+      background: green;
    }
+
+   .off{
+      background: linear-gradient(to right, #DFDFDF, #989797);
+   }
+
+   
 `

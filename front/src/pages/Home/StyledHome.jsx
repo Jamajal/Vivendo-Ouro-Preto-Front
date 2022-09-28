@@ -7,6 +7,6 @@ export const StyledHome = styled.div`
     }
 
     .gap{
-        margin-top: 30px;
+        margin-top: 50px;
     }
 `
