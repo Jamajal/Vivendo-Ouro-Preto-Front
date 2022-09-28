@@ -1,9 +1,11 @@
 import { StyledFooter } from "./StyledFooter";
 
+import logo from '../../assets/images/footer.png'
+
 export default function Footer(){
     return(
         <StyledFooter className="layer">
-            <img src="../../images/footer.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
             <div className="creators">
                 <div>
                     <p>Arthur Silva</p>

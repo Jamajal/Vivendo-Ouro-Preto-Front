@@ -1,11 +1,13 @@
 import { StyledHeader } from './StyledHeader'
 import { Link } from 'react-router-dom'
 
+import logo from '../../assets/images/logo2.png'
+
 export default function Header(){
 
     return(
         <StyledHeader className="layer">
-            <Link to="/"><img src="../../images/logo2.png" alt="Logo"></img></Link>
+            <Link to="/"><img src={logo} alt="Logo"></img></Link>
             <nav>
                 <a href="#">Quem somos?</a>
                 <a href="#">Eventos</a>
