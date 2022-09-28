@@ -4,6 +4,7 @@ import EventList from '../../components/EventsList'
 import Forms from '../../components/Forms'
 import Footer from '../../components/Footer'
 import CarouselMoradias from '../../components/CarouselMoradias'
+import CarouselPontosTuristicos from '../../components/CarouselPontosTuristicos'
 
 import { StyledHome } from './StyledHome'
 
@@ -14,7 +15,7 @@ export default function Home(){
             <Welcome /> 
             <EventList />
             <CarouselMoradias />
-            {/* <CarouselPontosTuristicos /> */}
+            <CarouselPontosTuristicos />
             <Forms />
             <Footer />
         </StyledHome>
