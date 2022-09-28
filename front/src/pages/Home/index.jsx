@@ -3,6 +3,7 @@ import Welcome from '../../components/Welcome'
 import EventList from '../../components/EventsList'
 import Forms from '../../components/Forms'
 import Footer from '../../components/Footer'
+import CarouselMoradias from '../../components/CarouselMoradias'
 
 import { StyledHome } from './StyledHome'
 
@@ -12,6 +13,8 @@ export default function Home(){
             <Header />
             <Welcome /> 
             <EventList />
+            <CarouselMoradias />
+            {/* <CarouselPontosTuristicos /> */}
             <Forms />
             <Footer />
         </StyledHome>
