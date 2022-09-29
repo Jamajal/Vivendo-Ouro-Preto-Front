@@ -1,6 +1,7 @@
 import { StyledEventsList } from "./StyledEventsList";
 
 import EventUnit from '../EventUnit'
+import Button from '../Button';
 import backgroundEvent1 from '../../assets/images/fundoevento1.png'
 import backgroundEvent2 from '../../assets/images/fundoevento2.png'
 
@@ -30,6 +31,7 @@ export default function EventList(){
                 <EventUnit props={data[0]} />
                 <EventUnit props={data[1]} />
             </div>
+            <Button text="Ver todos" whereTo="#" />
         </StyledEventsList>
     )
 }
