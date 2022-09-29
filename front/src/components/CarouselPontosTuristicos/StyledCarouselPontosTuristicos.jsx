@@ -5,8 +5,11 @@ export const StyledCarouselPontosTuristicos = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #D9D9D9;
     width: 100%;
     padding-top: 4%;
     padding-bottom: 4%;
+
+    > h2 {
+        margin-bottom: 3rem;
+    }
 `

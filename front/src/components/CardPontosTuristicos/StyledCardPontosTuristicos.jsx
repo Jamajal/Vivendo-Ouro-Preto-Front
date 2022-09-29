@@ -5,12 +5,20 @@ export const StyledCardPontosTuristicos = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #D9D9D9;
     border-radius: 15px;
-    height: 265px;
-    width: 80%;
+    width: 265px;
 
     > div {
         text-align: center;
+
+        > h3, > p {
+            margin: 20px;
+        }
+        
+        > button {
+            background: none;
+            border-radius: 8px;
+            border: 2px solid #D9D9D9;
+        }
     }
 `
