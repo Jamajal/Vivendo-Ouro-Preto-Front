@@ -27,7 +27,6 @@ export const StyledEventsList = styled.section`
 
     > div{
         width: 100%;
-        margin-bottom: 20px;
         display: flex;
         justify-content: center;
         align-items: center;

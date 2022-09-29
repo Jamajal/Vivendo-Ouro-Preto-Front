@@ -2,6 +2,7 @@ import { StyledCarouselPontosTuristicos } from "./StyledCarouselPontosTuristicos
 
 import Carousel from "better-react-carousel";
 import CardPontosTuristicos from "../CardPontosTuristicos";
+import Button from '../Button';
 
 export default function CarouselMoradias() {
     return (
@@ -29,6 +30,11 @@ export default function CarouselMoradias() {
                     </Carousel.Item>
                 </Carousel>
             </div>
+            <Button
+                text="Ver Todos"
+                whereTo="#"
+                theme="dark"
+            />
         </StyledCarouselPontosTuristicos>
     )
 }

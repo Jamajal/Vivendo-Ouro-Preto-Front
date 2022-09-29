@@ -8,7 +8,7 @@ export default function CardMoradias() {
                 <p>Endereço: Rua Jovelino Mineiro 149</p>
                 <p>Bairro: Vila Operaria</p>
                 <p>Vagas: 3 vagas</p>
-            </div>
+            </div>  
         </StyledCardMoradias>
     )
 }

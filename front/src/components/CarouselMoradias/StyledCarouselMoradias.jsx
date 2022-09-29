@@ -14,5 +14,4 @@ export const StyledCarouselMoradias = styled.section`
         color: white;
         margin-bottom: 2%;
     }
-
 `

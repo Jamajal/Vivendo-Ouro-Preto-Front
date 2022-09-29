@@ -31,7 +31,7 @@ export default function EventList(){
                 <EventUnit props={data[0]} />
                 <EventUnit props={data[1]} />
             </div>
-            <Button text="Ver todos" whereTo="#" />
+            <Button text="Ver todos" whereTo="#" theme="dark" />
         </StyledEventsList>
     )
 }
