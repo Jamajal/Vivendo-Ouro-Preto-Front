@@ -63,7 +63,7 @@ export default function SignUp(){
                         <div>
                             <input 
                                 type="text" 
-                                placeholder="name" 
+                                placeholder="Nome de usuário" 
                                 onChange={e => { 
                                     setName(e.target.value)
                                     setError("");
@@ -72,7 +72,7 @@ export default function SignUp(){
                             />
                             <input 
                                 type="text" 
-                                placeholder="phone"
+                                placeholder="Telefone"
                                 onChange={e => {
                                     setPhone(e.target.value);
                                     setError("");
@@ -97,7 +97,7 @@ export default function SignUp(){
                         />
                         <input 
                             type="password" 
-                            placeholder="confirm password" 
+                            placeholder="confirme password" 
                             onChange={e => { 
                                 setConfirmPassword(e.target.value);
                                 setError("");
@@ -106,7 +106,7 @@ export default function SignUp(){
                         <label className="error">{error}</label>
                         <input 
                             type="submit" 
-                            value="Sign Up" 
+                            value="Cadastrar" 
                             onClick={e => handleSignup(e)}
                         />
                     </form>
