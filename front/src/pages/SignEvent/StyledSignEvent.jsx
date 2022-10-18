@@ -31,7 +31,7 @@ export const StyledSignEvent = styled.section`
 
     .sign-event-box > .right-side{
         width: 100%;
-        height: 100%;
+        
         
         display: flex;
         flex-direction: column;
@@ -43,8 +43,8 @@ export const StyledSignEvent = styled.section`
     .sign-event-box > .right-side > h1{
         font-family: 'Montaga';
         font-weight: 400;
-        font-size: 35px;
-        line-height: 37px;
+        font-size: 30px;
+        line-height: 32px;
         text-align: center;
     }
 
@@ -117,5 +117,79 @@ export const StyledSignEvent = styled.section`
         background-color: #e7e7e7;
         border: none;
         cursor: pointer;
+    }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        .sign-event-box{
+            width: 65%;
+        }
+
+        .sign-event-box > .left-side{
+            width: 100%;
+        }
+
+        .sign-event-box > .right-side{
+            gap: 10px;
+        }
+
+        .sign-event-box > .right-side > h1{
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+        .sign-event-box > .right-side > h3{
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .sign-event-box > .right-side > form > input[type="text"],
+        .sign-event-box > .right-side > form > input[type="number"]{
+            font-size: 12px;
+        }
+
+        .sign-event-box > .right-side > form > .working-time{
+            gap: 5px;
+        }
+
+        .sign-event-box > .right-side > form > .working-time > input{
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 800px){
+        .sign-event-box{
+            width: 65%;
+        }
+
+        .sign-event-box > .left-side{
+            display: none;
+        }
+
+        .sign-event-box > .right-side{
+            gap: 10px;
+        }
+
+        .sign-event-box > .right-side > h1{
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+        .sign-event-box > .right-side > h3{
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .sign-event-box > .right-side > form > input[type="text"],
+        .sign-event-box > .right-side > form > input[type="number"]{
+            font-size: 12px;
+        }
+
+        .sign-event-box > .right-side > form > .working-time{
+            gap: 5px;
+        }
+
+        .sign-event-box > .right-side > form > .working-time > input{
+            font-size: 12px;
+        }
     }
 `

@@ -20,7 +20,7 @@ export default function SignAttraction(){
                         <input type="number" name="cost" placeholder="Valor R$" />
                         <input type="text" name="description" placeholder="Descrição" />
                         <div className="working-time">
-                            <p>Abre às</p>
+                            <p>Abre</p>
                             <input type="time" name="opening" id="opening" />
                             <p> até </p>
                             <input type="time" name="closing" id="closing" />
