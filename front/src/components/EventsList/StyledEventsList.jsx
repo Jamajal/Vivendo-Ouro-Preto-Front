@@ -9,7 +9,7 @@ export const StyledEventsList = styled.section`
     
 
     > h2{
-        margin-bottom: 5px;
+        margin-bottom: 20px;
 
         font-family: 'Montserrat';
         font-weight: 400;
@@ -18,18 +18,35 @@ export const StyledEventsList = styled.section`
         color: #925946;
     }
 
-    > hr{
-        margin-bottom: 30px;
-        width: 30%;
-        height: 2px;
-        background: #925946;
-    }
-
     > div{
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 30px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        margin: 20px 0 40px 0;
+
+        > h2{
+            font-size: 20px;
+        }
+
+        > div{
+            gap: 20px;
+        }
+    }
+
+    @media (max-width: 767px){
+        margin: 20px 0 40px 0;
+
+        > h2{
+            font-size: 16px;
+        }
+
+        > div{
+            gap: 10px;
+        }
     }
 `

@@ -16,4 +16,14 @@ export const StyledButton = styled.button`
         color: white;
         border-radius: 10px;
     }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+    @media (max-width: 767px){
+        padding: 5px 10px;
+        font-size: 12px;
+    }
 `

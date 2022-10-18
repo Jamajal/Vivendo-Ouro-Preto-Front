@@ -24,4 +24,20 @@ export const StyledWelcome = styled.section`
         line-height: 49px;  
         text-align: center;
     }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        h1{
+            font-size: 40px;
+            transform: translateY(20px);
+        }
+    }
+
+    @media (max-width: 767px){
+        justify-content: center;
+
+        h1{
+            font-size: 40px;
+            transform: translateY(20px);
+        }
+    }
 `

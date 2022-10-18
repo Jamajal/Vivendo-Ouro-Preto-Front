@@ -26,7 +26,6 @@ export default function EventList(){
     return(
         <StyledEventsList className="layer gap">
             <h2>Próximos eventos</h2>
-            <hr />
             <div>
                 <EventUnit props={data[0]} />
                 <EventUnit props={data[1]} />

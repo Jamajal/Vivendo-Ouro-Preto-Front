@@ -6,28 +6,18 @@ export const StyledUnit = styled.div`
     padding: 20px;
     position: relative;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 30px;
-
-    
     background-size: cover;
     background-repeat: no-repeat;
 
     border-radius: 8px;
+    transition: 0.5s;
 
-    > label{
-        text-align: center;
-        width: 65px;
-
-        font-size: 14px;
-        font-weight: 700;
-        color: white;
-        padding: 5px 12px;
-        background-color: #E7936E;
-        border-radius: 5px;
+    > .info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 
     > .info > div > h2{
@@ -53,7 +43,7 @@ export const StyledUnit = styled.div`
     }
 
     > .info > div > p{
-        max-width: 70%;
+        max-width: 80%;
 
         z-index: 1;
 
@@ -72,5 +62,38 @@ export const StyledUnit = styled.div`
         
         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.87) 100%);
         border-radius: 8px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        height: 200px;
+        width: 350px;
+        padding: 15px;
+
+        > .info > div > h2{
+            font-size: 24px;
+            line-height: 20px;
+        }
+
+        > .info > div > p{
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    @media (max-width: 767px){
+        height: 150px;
+        width: 350px;
+        padding: 15px;
+
+        > .info > div > h2{
+            max-width: 100%;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        > .info > div > p{
+            display: none;
+        }
     }
 `

@@ -4,7 +4,6 @@ export default function EventUnit({ props }){
 
     return (
         <StyledUnit style={{backgroundImage: "url(" + props.imgUrl + ")"}}>
-            <label className="tag">{props.tag}</label>
             <div className="info">
                 <div>
                     <h2>{props.title}</h2>
