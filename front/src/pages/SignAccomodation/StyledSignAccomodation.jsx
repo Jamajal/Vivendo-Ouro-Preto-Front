@@ -76,6 +76,10 @@ export const StyledSignAccomodation = styled.section`
         border-radius: 10px;
     }
 
+    .sign-accomodation-box > .right-side > form > label{
+        color: red;
+    }
+
     .sign-accomodation-box > .right-side > form > input[type="submit"]{
         margin: 10px 0;
         padding: 5px 20px;
@@ -160,6 +164,10 @@ export const StyledSignAccomodation = styled.section`
         }
 
         .sign-accomodation-box > .right-side > form > .working-time > input{
+            font-size: 12px;
+        }
+
+        .sign-accomodation-box > .right-side > form > label{
             font-size: 12px;
         }
     }

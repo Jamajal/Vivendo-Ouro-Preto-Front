@@ -85,6 +85,10 @@ export const StyledSignEvent = styled.section`
         border-radius: 10px;
     }
 
+    .sign-event-box > .right-side > form > label {
+        color: red;
+    }
+
     .sign-event-box > .right-side > form > input[type="submit"]{
         margin: 10px 0;
         padding: 5px 20px;
@@ -189,6 +193,10 @@ export const StyledSignEvent = styled.section`
         }
 
         .sign-event-box > .right-side > form > .working-time > input{
+            font-size: 12px;
+        }
+
+        .sign-event-box > .right-side > form > label {
             font-size: 12px;
         }
     }

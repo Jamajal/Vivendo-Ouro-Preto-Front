@@ -76,6 +76,10 @@ export const StyledSignAttraction = styled.section`
         border-radius: 10px;
     }
 
+    .sign-attraction-box > .right-side > form > label{
+        color: red;
+    }
+
     .sign-attraction-box > .right-side > form > input[type="submit"]{
         margin: 10px 0;
         padding: 5px 20px;
@@ -179,6 +183,10 @@ export const StyledSignAttraction = styled.section`
         }
 
         .sign-attraction-box > .right-side > form > .working-time > input{
+            font-size: 12px;
+        }
+
+        .sign-attraction-box > .right-side > form > label{
             font-size: 12px;
         }
     }

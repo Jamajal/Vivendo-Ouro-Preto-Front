@@ -149,6 +149,10 @@ export const StyledHeader = styled.header`
       width: 100px;
     }
 
+    .logged > div > img{
+      width: 30px;
+     }
+
     nav{
       gap: 5px;
     }
