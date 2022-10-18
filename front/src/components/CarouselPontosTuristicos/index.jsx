@@ -8,8 +8,8 @@ export default function CarouselMoradias() {
     return (
         <StyledCarouselPontosTuristicos className="layer"> 
             <h2>Encontre locais para ficar por alguns dias ou moradias fixas para períodos maiores</h2>
-            <div style={{ justifyContent: 'center', width: '78%', alignItems: 'center'}}>
-                <Carousel cols={3} loop hideArrow autoplay={5000}>
+            <div>
+                <Carousel cols={2} loop hideArrow autoplay={5000}>
                     <Carousel.Item>
                         <CardPontosTuristicos />
                     </Carousel.Item>

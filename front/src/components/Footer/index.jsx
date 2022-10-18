@@ -9,19 +9,19 @@ export default function Footer(){
             <div className="creators">
                 <div>
                     <p>Arthur Silva</p>
-                    <p>arthusil18@hotmail.com</p>
+                    <p className="email">arthusil18@hotmail.com</p>
                 </div>
                 <div>
                     <p>Felipe</p>
-                    <p>sasdelli.pi@gmail.com</p>
+                    <p className="email">sasdelli.pi@gmail.com</p>
                 </div>
                 <div>
                     <p>Leandro Libério</p>
-                    <p>leandroliberiomachado@hotmail.com</p>
+                    <p className="email">leandroliberiomachado@hotmail.com</p>
                 </div>
                 <div>
                     <p>Rafael Diniz</p>
-                    <p>rafaelddniz@gmail.com</p>
+                    <p className="email"> rafaelddniz@gmail.com</p>
                 </div>
             </div>
         </StyledFooter>

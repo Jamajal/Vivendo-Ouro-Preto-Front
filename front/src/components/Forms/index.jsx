@@ -39,6 +39,13 @@ export default function Forms(){
                             onChange={e => setPhone(e.target.value)}
                         />
                     </div>
+                    <input 
+                        type="text" 
+                        name="Text message" 
+                        placeholder="Digite sua mensagem aqui" 
+                        className="tablet-only"
+                        onChange={e => setMessage(e.target.value)}
+                    />
                     <div className="buttons">
                         <button onClick={e => e.preventDefault()}>Cancelar</button>
                         <input 
@@ -52,6 +59,7 @@ export default function Forms(){
                     type="text" 
                     name="Text message" 
                     placeholder="Digite sua mensagem aqui" 
+                    className="desktop-only"
                     onChange={e => setMessage(e.target.value)}
                 />
             </form>

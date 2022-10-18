@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import accomodationImage from '../../assets/images/sign-accomodation.png'
 
 import { useState } from 'react'
+import axios from 'axios';
 
 export default function SignAccomodation(){
     const [ value, setValue ] = useState();
@@ -12,8 +13,7 @@ export default function SignAccomodation(){
     const [ description, setDescription ] = useState();
     const [ error, setError ] = useState();
 
-
-    const handleSignAccomodation = e => {
+    const handleSignAccomodation = async e => {
         e.preventDefault();
 
         if(!value | !adress | !spot | !phone | !description){
@@ -30,7 +30,9 @@ export default function SignAccomodation(){
         }
 
         console.log(data)
+        
         //send to bd
+        const response = await axios.post("http:localhost:8080/eventos", data);
     }
 
     return(

@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import attractionImage from '../../assets/images/sign-attraction.png'
 
 import { useState } from 'react'
+import axios from 'axios';
 
 export default function SignAttraction(){
     const [ name, setName ] = useState();
@@ -15,7 +16,7 @@ export default function SignAttraction(){
     const [ error, setError ] = useState();
 
 
-    const handleSignAttraction = e => {
+    const handleSignAttraction = async e => {
         e.preventDefault();
 
         if(!name | !adress | !value |  !description | !opening | !closing){
@@ -33,7 +34,9 @@ export default function SignAttraction(){
         }
 
         console.log(data)
+
         //send to bd
+        const response = await axios.post("http:localhost:8080/atracoes", data);
     }
 
     return(

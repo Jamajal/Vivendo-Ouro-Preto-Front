@@ -22,6 +22,7 @@ export const StyledForms = styled.section`
 
     > form{
         display: flex;
+        justify-content: center;
         gap: 50px;
         height: 250px;
     }
@@ -71,7 +72,8 @@ export const StyledForms = styled.section`
     }
     
     .contact-fields > input,
-    > form > input{
+    > form > input,
+    .tablet-only{
         width: 400px;
         padding: 3px 10px;
         
@@ -87,4 +89,67 @@ export const StyledForms = styled.section`
     > form > input{
         width: 100%;
     }
-    `
+
+    .tablet-only{
+        display: none;
+        height: 32%;
+    }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        padding: 30px 0;
+        gap: 10px;
+
+        > h2{
+            font-size: 26px;
+        }
+
+        > p{
+            font-size: 14px;
+        }
+
+        .tablet-only{
+            display: block;
+        }
+
+        .desktop-only{
+            display: none;
+        }
+
+        .buttons{
+            justify-content: center;
+        }
+     }
+  
+     @media (max-width: 767px){
+        padding: 30px 0;
+        gap: 10px;
+
+        > h2{
+            width: 100%;
+            font-size: 26px;
+        }
+
+        > p{
+            width: 100%;
+            font-size: 12px;
+        }
+
+        .tablet-only{
+            display: block;
+        }
+
+        .desktop-only{
+            display: none;
+        }
+
+        .contact-fields > input,
+        > form > input,
+        .tablet-only{
+            font-size: 12px;
+        }
+
+        .buttons{
+            justify-content: center;
+        }
+     }
+`

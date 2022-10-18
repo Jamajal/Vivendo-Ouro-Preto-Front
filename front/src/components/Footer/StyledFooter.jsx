@@ -26,4 +26,41 @@ export const StyledFooter = styled.footer`
         align-items: center;
         gap: 5px;
     }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        gap: 50px;
+
+        > img{
+            width: 120px;
+        }
+
+        .creators{
+            gap: 40px;
+        }
+
+        .creators > div > p{
+            font-size: 12px;
+        }
+     }
+  
+     @media (max-width: 767px){
+        gap: 30px;
+
+        > img{
+            width: 90px;
+        }
+
+        .creators{
+            gap: 30px;
+        }
+
+        .creators > div > p{
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .email{
+            display: none;
+        }
+     }
 `

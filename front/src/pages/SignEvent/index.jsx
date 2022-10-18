@@ -3,6 +3,7 @@ import Header from '../../components/Header';
 import eventImage from '../../assets/images/sign-event.png'
 
 import { useState } from 'react';
+import axios from 'axios';
 
 export default function SignEvent(){
     const [ name, setName ] = useState();
@@ -15,7 +16,7 @@ export default function SignEvent(){
     const [ error, setError ] = useState();
 
 
-    const handleSignEvent = e => {
+    const handleSignEvent = async e => {
         e.preventDefault();
 
         if(!name | !date | !adress | !value |  !description | !opening | !closing){
@@ -32,9 +33,11 @@ export default function SignEvent(){
             termino: closing,
             descricao: description
         }
-
+            
         console.log(data)
+
         //send to bd
+        const response = await axios.post("http:localhost:8080/atracoes", data);
     }
 
     return (
