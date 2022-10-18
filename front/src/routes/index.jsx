@@ -31,9 +31,30 @@ const RoutesApp = () =>{
                     <Route exact path="sign-accomodation" element={<SignAccomodation />} />
                     <Route exact path="sign-attraction" element={<SignAttraction />} />
                     <Route exact path="sign-event" element={<SignEvent />} />
-                    <Route exact path="accomodations" element={<SecondaryPages title="Acomodações de Ouro Preto e região" img={imgAccomodation}/>} />
-                    <Route exact path="attractions" element={<SecondaryPages title="Atrações de Ouro Preto e região" img={imgAttraction}/>} />
-                    <Route exact path="events" element={<SecondaryPages title="Eventos de Ouro Preto e região" img={imgEvents}/>} />
+                    <Route 
+                        exact path="accomodations" 
+                        element={<SecondaryPages 
+                            title="Acomodações de Ouro Preto e região" 
+                            img={imgAccomodation} 
+                            link="/sign-accomodation"
+                        />} 
+                    />
+                    <Route 
+                        exact path="attractions" 
+                        element={<SecondaryPages 
+                            title="Atrações de Ouro Preto e região" 
+                            img={imgAttraction}
+                            link="/sign-attraction"
+                        />} 
+                    />
+                    <Route 
+                        exact path="events" 
+                        element={<SecondaryPages 
+                            title="Eventos de Ouro Preto e região" 
+                            img={imgEvents}
+                            link="/sign-event"
+                        />} 
+                    />
                 </Routes>
             </Fragment>
         </BrowserRouter>

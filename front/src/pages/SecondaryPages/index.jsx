@@ -1,6 +1,7 @@
 import { StyledSecondaryPages } from './StyledSecondaryPages'
 import Header from '../../components/Header'
 import CardsGeneral from '../../components/CardsGeneral'
+import { Link } from 'react-router-dom';
 
 export default function SecondaryPages(props){
     return(
@@ -13,7 +14,9 @@ export default function SecondaryPages(props){
                 <div className="container-cards">
                     <div className="title">
                         <h2>{props.title}</h2>
-                        <button className="btn-add">+</button>
+                        <Link to={props.link}>
+                            <button className="btn-add">+</button>
+                        </Link>
                     </div>
 
                     <div className="cards-list">

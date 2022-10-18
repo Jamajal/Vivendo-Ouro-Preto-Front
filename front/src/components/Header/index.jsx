@@ -32,10 +32,9 @@ export default function Header(){
         <StyledHeader>
             <Link to="/"><img src={logo} alt="Logo"></img></Link>
             <nav>
-                <a href="#">Quem somos?</a>
-                <a href="/events">Eventos</a>
-                <a href="/attractions">Atrações</a>
-                <a href="/accomodations">Alojamentos</a>
+                <Link to="/events">Eventos</Link>
+                <Link to="/attractions">Atrações</Link>
+                <Link to="/accomodations">Alojamentos</Link>
             </nav>
             <div className="login">
                 {<IsLogged />}           
