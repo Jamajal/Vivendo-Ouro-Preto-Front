@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 import logo from '../../assets/images/logo2.png';
+import profile from '../../assets/images/profile.png';
 
 export default function Header(){
     const { signed, signout, user } = useAuth();
@@ -11,9 +12,9 @@ export default function Header(){
         if(signed)
             return(
                 <div className="logged">
-                    <div className="visor on" />
                     <div className="profile">
-                        <label onClick={() => signout()}>{user.email}</label>
+                        <img src={profile} alt="profile" />
+                        <label onClick={() => signout()}>Logout</label>
                     </div>
                     
                 </div>

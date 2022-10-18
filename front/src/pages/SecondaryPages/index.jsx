@@ -3,7 +3,21 @@ import Header from '../../components/Header'
 import CardsGeneral from '../../components/CardsGeneral'
 import { Link } from 'react-router-dom';
 
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+
 export default function SecondaryPages(props){
+    async function getPosts(){
+        const response = await axios.get("http://localhost:8080/atracoes")
+        console.log(response);
+    }
+
+    const [ posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        getPosts();
+    }, [])
+
     return(
         <StyledSecondaryPages>
             <Header />

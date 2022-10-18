@@ -60,12 +60,31 @@ export const StyledHeader = styled.header`
      gap: 5px;
    }
 
+   .logged > div{
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+   }
+
+   .logged > div > img{
+    width: 60px;
+   }
+
    .logged > div > label{
+     padding: 5px 10px;
      font-family: 'Merriweather';
      font-size: 18px;
      font-weight: 700;
      color: #925946;
      cursor: pointer;
+     transition: 0.5s;
+   }
+
+   .logged > div > label:hover{
+     color: white;
+     background-color: #925946;
+     border: solid 1px #925946;
+     border-radius: 10px;
    }
 
    .logged > div > label:hover{
