@@ -43,8 +43,8 @@ export const StyledSignAccomodation = styled.section`
     .sign-accomodation-box > .right-side > h1{
         font-family: 'Montaga';
         font-weight: 400;
-        font-size: 35px;
-        line-height: 37px;
+        font-size: 27px;
+        line-height: 32px;
         text-align: center;
     }
 
@@ -88,5 +88,79 @@ export const StyledSignAccomodation = styled.section`
         border: none;
         border-radius: 10px;
         cursor: pointer;
+    }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        .sign-accomodation-box{
+            width: 65%;
+        }
+
+        .sign-accomodation-box > .left-side{
+            width: 100%;
+        }
+
+        .sign-accomodation-box > .right-side{
+            gap: 10px;
+        }
+
+        .sign-accomodation-box > .right-side > h1{
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+        .sign-accomodation-box > .right-side > h3{
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .sign-accomodation-box > .right-side > form > input[type="text"],
+        .sign-accomodation-box > .right-side > form > input[type="number"]{
+            font-size: 12px;
+        }
+
+        .sign-accomodation-box > .right-side > form > .working-time{
+            gap: 5px;
+        }
+
+        .sign-accomodation-box > .right-side > form > .working-time > input{
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 800px){
+        .sign-accomodation-box{
+            width: 65%;
+        }
+
+        .sign-accomodation-box > .left-side{
+            display: none;
+        }
+
+        .sign-accomodation-box > .right-side{
+            gap: 10px;
+        }
+
+        .sign-accomodation-box > .right-side > h1{
+            font-size: 22px;
+            line-height: 22px;
+        }
+
+        .sign-accomodation-box > .right-side > h3{
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        .sign-accomodation-box > .right-side > form > input[type="text"],
+        .sign-accomodation-box > .right-side > form > input[type="number"]{
+            font-size: 12px;
+        }
+
+        .sign-accomodation-box > .right-side > form > .working-time{
+            gap: 5px;
+        }
+
+        .sign-accomodation-box > .right-side > form > .working-time > input{
+            font-size: 12px;
+        }
     }
 `

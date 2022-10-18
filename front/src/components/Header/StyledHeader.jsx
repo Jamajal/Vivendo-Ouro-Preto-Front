@@ -23,7 +23,8 @@ export const StyledHeader = styled.header`
 
    > nav{
        display: flex;
-       gap: 10px;
+       align-items: center;
+       gap: 30px;
    }
 
    a{
@@ -97,5 +98,63 @@ export const StyledHeader = styled.header`
       background: linear-gradient(to right, #DFDFDF, #989797);
    }
 
-   
+   @media (min-width: 768px) and (max-width: 1150px){
+      img{
+        width: 150px;
+      }
+
+      a{
+        font-size: 14px;
+      }
+
+      .logged > div > label{
+        font-size: 14px;
+      }
+
+      .not-logged > a{
+        font-size: 12px;
+        width: 70px;
+        padding: 5px 5px;
+      }
+
+      .visor{
+        width: 12px;
+        height: 12px;
+      }
+   }
+
+   @media (max-width: 767px){
+    padding: 8px 15px; 
+
+    img{
+      width: 100px;
+    }
+
+    nav{
+      gap: 5px;
+    }
+
+    a{
+      font-size: 10px;
+    }
+
+    nav > a{
+      padding: 2px 5px;
+    }
+
+    .logged > div > label{
+      font-size: 8px;
+    }
+
+    .not-logged > a{
+      font-size: 8px;
+      width: auto;
+      padding: 2px 5px;
+    }
+
+    .visor{
+      width: 8px;
+      height: 8px;
+    }
+   }
 `

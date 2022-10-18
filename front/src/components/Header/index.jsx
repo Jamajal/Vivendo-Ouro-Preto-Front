@@ -23,7 +23,7 @@ export default function Header(){
             <div className="not-logged">
                 <div className="visor off" />
                 <Link to="/login" className="login">Entrar</Link>
-                <Link to="/sign-up">Criar Conta</Link>
+                <Link to="/sign-up">Cadastrar</Link>
             </div>
         )
     }
