@@ -7,12 +7,13 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 export default function SecondaryPages(props){
+    const [ posts, setPosts] = useState([]);
+
     async function getPosts(){
-        const response = await axios.get("http://localhost:8080/atracoes")
+        const response = await axios.get(`http://localhost:8080/atracoes`)
         console.log(response);
     }
 
-    const [ posts, setPosts] = useState([]);
 
     useEffect(() => {
         getPosts();
