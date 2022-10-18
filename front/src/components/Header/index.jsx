@@ -32,7 +32,6 @@ export default function Header(){
         <StyledHeader>
             <Link to="/"><img src={logo} alt="Logo"></img></Link>
             <nav>
-                <a href="#">Quem somos?</a>
                 <a href="#">Eventos</a>
                 <a href="#">Atrações</a>
                 <a href="#">Alojamentos</a>

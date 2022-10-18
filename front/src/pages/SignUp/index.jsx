@@ -58,7 +58,7 @@ export default function SignUp(){
             <div className="signup-box">
                 <div className="left-side">
                     <h2>Bem vindo</h2>
-                    <h3>Que bom que decidiu fazer parte de nossa comunidade! Você vai adorar</h3>
+                    <h3>Que bom que decidiu fazer parte de nossa comunidade!</h3>
                     <form action="/" method="POST">
                         <div>
                             <input 

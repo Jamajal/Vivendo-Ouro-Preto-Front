@@ -24,7 +24,7 @@ export const StyledHeader = styled.header`
    > nav{
        display: flex;
        align-items: center;
-       gap: 10px;
+       gap: 30px;
    }
 
    a{
@@ -135,7 +135,7 @@ export const StyledHeader = styled.header`
     }
 
     a{
-      font-size: 8px;
+      font-size: 10px;
     }
 
     nav > a{

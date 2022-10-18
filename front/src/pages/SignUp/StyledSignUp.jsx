@@ -12,6 +12,7 @@ export const StyledSignUp = styled.section`
         padding: 15px;
 
         display: flex;
+        align-items: center;
         gap: 20px;
 
         background-color: #FFFBFA;
@@ -30,11 +31,15 @@ export const StyledSignUp = styled.section`
         width: 100%;
     }
 
+    > .signup-box > .right-side > img{
+        width: 100%;
+    }
+
     > .signup-box > .left-side > h2{
         font-family: 'Montaga', serif;
         font-weight: 400;
-        font-size: 30px;
-        line-height: 37px;
+        font-size: 26px;
+        line-height: 32px;
     }
 
     > .signup-box > .left-side > h3{
@@ -44,7 +49,7 @@ export const StyledSignUp = styled.section`
         text-align: center;
         font-family: 'Montaga', serif;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 20px;
     }
 
@@ -95,5 +100,42 @@ export const StyledSignUp = styled.section`
 
     .gap{
         margin-top: 30px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        > .signup-box > .left-side > h2{
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        > .signup-box > .left-side > h3{
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 10px;
+        }
+
+        > .signup-box > .left-side > form > input[type="text"],
+        > .signup-box > .left-side > form > input[type="password"],
+        > .signup-box > .left-side > form > div > input[type="text"]{
+            font-size: 12px;
+        }
+
+        > .signup-box > .left-side > form,
+        > .signup-box > .left-side > form > div{
+            gap: 7px;
+        }
+
+        > .signup-box > .left-side > form > input[type="submit"]{
+            padding: 5px 15px;
+            font-size: 12px;
+    
+        }
+    
+    }
+
+    @media (max-width: 800px){
+        > .signup-box > .right-side{
+            display: none;
+        }
     }
 `

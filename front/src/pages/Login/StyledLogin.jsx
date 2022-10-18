@@ -22,6 +22,10 @@ export const StyledLogin = styled.section`
         width: 100%;;
     }
 
+    > .login-box > .left-side > img{
+        width: 100%;
+    }
+
     > .login-box > .right-side{
         width: 100%;
         display: flex;
@@ -97,5 +101,71 @@ export const StyledLogin = styled.section`
 
     .error{
         color: red;
+    }
+
+    @media (min-width: 768px) and (max-width: 1150px){
+        > .login-box > .right-side > h2{
+            font-size: 26px;
+            line-height: 28px; 
+        }
+
+        > .login-box > .right-side > h3{
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        > .login-box > .right-side > form > input[type="text"],
+        > .login-box > .right-side > form > input[type="password"]{
+            width: 80%;
+            margin: 3px 0;
+            padding: 4px 8px;
+            font-size: 12px;
+        }
+
+        > .login-box > .right-side > form > input[type="submit"]{
+            margin: 8px 0;
+            padding: 5px 15px;
+    
+            font-size: 14px;
+        }
+
+        a, p{
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 800px){
+        > .login-box > .left-side{
+            display: none;
+        }
+
+        > .login-box > .right-side > h2{
+            font-size: 26px;
+            line-height: 28px; 
+        }
+
+        > .login-box > .right-side > h3{
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        > .login-box > .right-side > form > input[type="text"],
+        > .login-box > .right-side > form > input[type="password"]{
+            width: 80%;
+            margin: 3px 0;
+            padding: 4px 8px;
+            font-size: 12px;
+        }
+
+        > .login-box > .right-side > form > input[type="submit"]{
+            margin: 8px 0;
+            padding: 5px 15px;
+    
+            font-size: 14px;
+        }
+
+        a, p{
+            font-size: 12px;
+        }
     }
 `
